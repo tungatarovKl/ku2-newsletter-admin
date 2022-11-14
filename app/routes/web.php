@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/newsletter', function () {
-    return view('helloworld');
+    return view('newsletter');
 });
