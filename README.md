@@ -12,5 +12,5 @@
 2.  Создаем новый контролер `php artisan make:controller NewsController`
 3.  Создаем новый путь с методом Post `app/routes/web.php` 
 4.  Прописываем основную логику `app/Http/Controllers/NewsController.php` 
-    4.1 Отправляем запрос на `http://localhost:5000/newsletter`
-    4.2 В зависимости от ответа, отправляем сообщение и переходим в основную страницу
+    Отправляем запрос на `http://localhost:5000/newsletter`
+    В зависимости от ответа, отправляем сообщение и переходим в основную страницу
