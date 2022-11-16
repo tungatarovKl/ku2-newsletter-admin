@@ -12,5 +12,7 @@
 2.  Создаем новый контролер `php artisan make:controller NewsController`
 3.  Создаем новый путь с методом Post `app/routes/web.php` 
 4.  Прописываем основную логику `app/Http/Controllers/NewsController.php` 
-5.  Отправляем запрос на `http://localhost:5000/newsletter`
-6.  В зависимости от ответа, отправляем сообщение и переходим в основную страницу
+5.  Прописываем .env  адрес локального Go микросервиса `SERVER_ADDRESS`
+6.  Прописываем тип базы данных /app/config/database.php -> `'default' => env('DB_CONNECTION', 'sqlite'),`
+6.  Отправляем запрос на `env('SERVER_ADDRESS')`
+7.  В зависимости от ответа, отправляем сообщение и переходим в основную страницу
