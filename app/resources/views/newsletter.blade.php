@@ -8,6 +8,12 @@
     <title>Newsletter</title>
 </head>
 <body>
+
+@if (session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
+    </div>
+@endif
 <form action = "/submit" method = "post" class="d-flex align-items-center justify-content-center" style="height:100vh;">
 @csrf
 
